@@ -253,6 +253,7 @@ section#mechanism .container h1 {
   font-weight: 700;
   line-height: 1.1875rem; /* 105.556% */
   margin: 0;
+  text-align: center;
 }
 
 .date {
@@ -281,6 +282,62 @@ section#mechanism .container h1 {
 .desc-list ol {
   padding-left: 1rem;
   margin: 0;
+}
+
+/* logo section */
+section#logo {
+  display: flex;
+  padding: 5.125rem 0rem 5.0625rem 0rem;
+  justify-content: center;
+  align-items: center;
+  background: #f4fbff;
+}
+
+section#logo .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.125rem;
+  max-width: 100%;
+  background: #f4fbff;
+}
+
+.logo-card {
+  width: 18.1875rem;
+  height: 9rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 0.625rem;
+  background: #fff;
+}
+
+.gap {
+  width: 2rem; /* Set the width of the gap */
+  flex-shrink: 0; /* Prevent the spacer element from shrinking */
+}
+
+.scroll-container {
+  width: 100vw;
+  overflow-x: scroll;
+  white-space: nowrap;
+  background-color: #f4fbff;
+  display: flex;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scroll-disabler {
+  width: 100vw;
+  height: 34.4px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.0001);
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 @media (max-width: 768px) {
