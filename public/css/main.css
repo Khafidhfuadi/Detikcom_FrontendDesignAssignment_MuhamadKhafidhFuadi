@@ -1,0 +1,474 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+body {
+  background: #fff;
+  font-family: Montserrat;
+  color: #fff;
+}
+
+.navbar {
+  background: #007cbd;
+  display: flex;
+  padding: 0.9375rem 6.25rem;
+  align-items: center;
+  color: white;
+
+  /* stick to top */
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* .navbar-nav to right */
+.navbar-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.875rem;
+  flex: 1 0 0;
+}
+
+.nav-item {
+  display: flex;
+  padding: 0.625rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+button.regist-btn {
+  display: flex;
+  padding: 0.625rem 1.875rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+
+  border-radius: 6.25rem;
+  background: #fff;
+
+  color: #007cbd;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+/* hero section start */
+section#hero {
+  background: url("/public/images/hero-bg.png") no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headline {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.875rem;
+  padding-left: 16.13rem;
+  padding-right: 16.13rem;
+}
+
+.wrap-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  text-align: center;
+  width: auto;
+}
+
+.wrap-text h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2.25rem; /* 150% */
+  margin: 0;
+}
+
+.wrap-text h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 2.25rem; /* 75% */
+}
+
+.wrap-text p {
+  text-align: center;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  padding-left: 2.44rem;
+  padding-right: 2.44rem;
+  font-weight: normal;
+}
+
+/* hero section end */
+
+/* about section */
+
+section#about {
+  display: flex;
+  padding: 6.25rem 12.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.625rem;
+  align-self: auto; /* Change to auto */
+}
+
+.about-card {
+  display: flex;
+  align-items: center;
+  gap: 2.1875rem;
+  width: 100%; /* Add this line */
+}
+
+.about-card iframe {
+  width: 24.5rem;
+  height: 13.75981rem;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.25rem;
+  flex: 1; /* Add this line */
+}
+
+.desc h3 {
+  color: #007cbd;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+}
+
+.desc p {
+  color: #1b1e28;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.1875rem; /* 135.714% */
+  margin: 0;
+}
+
+.share-social-media {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.share-social-media h5 {
+  color: #007cbd;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.1875rem; /* 135.714% */
+  margin: 0;
+  align-self: center;
+}
+
+/* mechanism section */
+
+section#mechanism {
+  background: url("/public/images/background-mekanisme-section.png") no-repeat
+    center center/cover;
+  height: auto;
+  padding: 9.19rem 0rem 9.19rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section#mechanism .container {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3.125rem;
+  max-width: 50%;
+}
+
+section#mechanism .container h1 {
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.25rem; /* 41.667% */
+}
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5625rem;
+}
+
+.mechanism-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.0625rem;
+  border-radius: 0.625rem;
+  background: #fff;
+  width: auto;
+  max-width: 100%;
+  padding: 1.875rem;
+  box-sizing: border-box; /* Add this line */
+}
+
+.mechanism-card .card-body {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.875rem;
+  padding: 0;
+  width: 100%; /* Add this line */
+  box-sizing: border-box; /* Add this line */
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  flex: 1 1 auto; /* Add this line */
+  width: 100%; /* Add this line */
+  box-sizing: border-box; /* Add this line */
+}
+
+.title {
+  color: #007cbd;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.1875rem; /* 105.556% */
+  margin: 0;
+}
+
+.date {
+  color: #007cbd;
+  text-align: right;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.1875rem; /* 135.714% */
+  margin: 0;
+}
+
+.desc-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.desc-list {
+  color: #1b1e28;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25rem; /* 166.667% */
+}
+
+.desc-list ol {
+  padding-left: 1rem;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  /* hero section */
+  .headline {
+    padding-right: 3.31rem;
+    padding-left: 3.31rem;
+  }
+
+  .wrap-text h5 {
+    font-size: 1.25rem;
+    line-height: normal;
+  }
+
+  .wrap-text h1 {
+    font-size: 2.25rem;
+  }
+
+  .wrap-text p {
+    font-size: 0.75rem;
+    padding: 0;
+    font-weight: normal;
+  }
+
+  button.regist-btn {
+    display: flex;
+    padding: 1rem 1.25rem;
+    gap: 0.625rem;
+
+    border-radius: 0.3125rem;
+    background: #3eb7dd;
+
+    color: #fff;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+
+  /* about section responsive */
+  section#about {
+    padding: 6.25rem 8rem;
+  }
+
+  .about-card {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.875rem;
+  }
+
+  .about-card iframe {
+    width: 100%;
+    height: 13.75981rem;
+  }
+
+  .share-social-media h5 {
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    padding: 0;
+    text-align: center;
+  }
+
+  section#mechanism .container {
+    max-width: 70%;
+  }
+
+  .mechanism-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.0625rem;
+    border-radius: 0.625rem;
+    background: #fff;
+    width: auto;
+    max-width: 100%;
+    padding: 1.875rem;
+    box-sizing: border-box; /* Add this line */
+  }
+
+  .mechanism-card .card-body {
+    display: flex;
+    flex-wrap: wrap; /* Add this line */
+    gap: 1.875rem;
+    padding: 0;
+    width: 100%; /* Add this line */
+    box-sizing: border-box; /* Add this line */
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    flex: 1 1 auto; /* Add this line */
+    width: 100%; /* Add this line */
+    box-sizing: border-box; /* Add this line */
+  }
+
+  .desc-head {
+    display: inline;
+    justify-content: right;
+  }
+
+  .date {
+    text-align: left;
+    padding-top: 0.63rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* hidden nav */
+  .navbar {
+    display: none;
+  }
+  /* hero section responsive */
+
+  .wrap-text,
+  .wrap-text p {
+    text-align: left;
+    padding: 0;
+  }
+
+  .headline {
+    padding-right: 3.31rem;
+    padding-left: 3.31rem;
+    align-items: flex-start;
+  }
+
+  .wrap-text {
+    padding: 0;
+    text-align: left;
+  }
+
+  .wrap-text h5 {
+    font-size: 1.25rem;
+    line-height: normal;
+  }
+
+  .wrap-text h1 {
+    font-size: 2.25rem;
+  }
+
+  .wrap-text p {
+    font-size: 0.75rem;
+    align-self: stretch;
+    padding: 0;
+    text-align: left;
+    font-weight: normal;
+  }
+
+  button.regist-btn {
+    display: flex;
+    padding: 1rem 1.25rem;
+    gap: 0.625rem;
+
+    border-radius: 0.3125rem;
+    background: #3eb7dd;
+
+    color: #fff;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+
+  /* about section responsive */
+  section#about {
+    padding: 6.25rem 1.22rem 6.25rem 1.22rem;
+  }
+
+  .about-card {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.875rem;
+  }
+
+  .about-card iframe {
+    width: 100%;
+    height: 13.75981rem;
+  }
+
+  .share-social-media h5 {
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    padding: 0;
+    text-align: center;
+  }
+
+  section#mechanism .container {
+    max-width: 90%;
+  }
+}
