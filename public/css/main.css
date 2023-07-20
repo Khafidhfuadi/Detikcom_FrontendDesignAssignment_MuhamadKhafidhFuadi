@@ -61,8 +61,8 @@ button.regist-btn {
 }
 
 button.regist-btn:hover {
-  background: #007cbd;
-  color: #fff;
+  background: #fff;
+  color: #007cbd;
 }
 
 /* hero section start */
@@ -70,55 +70,53 @@ section#hero {
   background: url("/public/images/hero-bg.png") no-repeat center center/cover;
   height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
+  text-align: center;
+  padding: 0 16.13rem 0 16.13rem;
 }
 
-.headline {
+section#hero .container {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
   gap: 1.875rem;
-  padding-left: 16.13rem;
-  padding-right: 16.13rem;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
 }
 
-.wrap-text {
+.headline {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 1.25rem;
-  text-align: center;
   width: auto;
 }
 
-.wrap-text h5 {
+.headline h5 {
   font-size: 1.5rem;
   font-weight: 600;
-  line-height: 2.25rem; /* 150% */
+  line-height: 2.25rem;
   margin: 0;
 }
 
-.wrap-text h1 {
+.headline h1 {
   font-size: 3rem;
   font-weight: 800;
-  line-height: 2.25rem; /* 75% */
+  line-height: 2.25rem;
+  margin: 0;
 }
 
-.wrap-text p {
+.headline p {
   text-align: center;
   font-size: 0.875rem;
   font-style: normal;
-  font-weight: 600;
   line-height: normal;
-  margin: 0;
-  padding-left: 2.44rem;
-  padding-right: 2.44rem;
+  padding: 0 2.44rem 0 2.44rem;
   font-weight: normal;
+  margin: 0;
 }
 
 button.main-regist-btn {
-  display: flex;
   padding: 1rem 1.25rem;
   gap: 0.625rem;
 
@@ -133,7 +131,7 @@ button.main-regist-btn {
 }
 
 button.main-regist-btn:hover {
-  background: #007cbd;
+  background: #3eb7dd;
 }
 
 /* hero section end */
@@ -195,8 +193,7 @@ section#mechanism {
   padding: 9.19rem 0rem 9.19rem 0rem;
 }
 
-section#mechanism .row {
-  display: grid;
+section#mechanism > .container > .row {
   gap: 2.5rem;
 }
 
@@ -321,6 +318,10 @@ section#logo .container {
 
 /* latest update  */
 
+section#latestupdate {
+  padding: 3.5rem 10.19rem 3.5rem 10.19rem;
+}
+
 section#latestupdate .container {
   display: grid;
   gap: 2.5rem;
@@ -336,6 +337,8 @@ section#latestupdate .container {
 
 .article-card {
   border-radius: 0.625rem;
+  margin: 0;
+  padding: 0;
 }
 
 .article-card h5 {
@@ -367,7 +370,6 @@ section#latestupdate .container {
   width: 100%;
   overflow: hidden;
   margin: 0 auto;
-
   border-radius: 0.625rem;
 }
 
@@ -376,7 +378,7 @@ section#latestupdate .container {
   transition: 0.3s all ease-in-out;
 }
 
-.article-card img:hover {
+.article-card a:hover img {
   transform: scale(1.1);
   border-radius: 0.625rem;
 }
@@ -385,41 +387,60 @@ section#latestupdate .container {
   color: #007cbd;
 }
 
+/* footer section */
+
+footer {
+  background: #007cbd;
+  padding: 1.88rem 3.06rem 1.88rem 3.06rem;
+}
+
+footer .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.875rem;
+}
+
+footer p {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.line {
+  height: 0.0625rem;
+  background: #fff;
+  margin: 1.25rem 0 1.25rem 0;
+}
+
+.copyright {
+  font-size: 0.625rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 0.875rem */
+}
+
 @media (max-width: 768px) {
   /* hero section */
-  .headline {
-    padding-right: 3.31rem;
-    padding-left: 3.31rem;
+  section#hero {
+    padding: 0 3.31rem 0 3.31rem;
   }
 
-  .wrap-text h5 {
+  .headline h5 {
     font-size: 1.25rem;
     line-height: normal;
   }
 
-  .wrap-text h1 {
+  .headline h1 {
     font-size: 2.25rem;
   }
 
-  .wrap-text p {
+  .headline p {
     font-size: 0.75rem;
     padding: 0;
     font-weight: normal;
-  }
-
-  button.regist-btn {
-    display: flex;
-    padding: 1rem 1.25rem;
-    gap: 0.625rem;
-
-    border-radius: 0.3125rem;
-    background: #3eb7dd;
-
-    color: #fff;
-    font-size: 0.875rem;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
   }
 
   /* about section responsive */
@@ -485,9 +506,8 @@ section#latestupdate .container {
     justify-content: right;
   }
 
-  .date {
-    text-align: left;
-    padding-top: 0.63rem;
+  section#latestupdate {
+    padding: 3.5rem 3.06rem 3.5rem 3.06rem;
   }
 }
 
@@ -498,33 +518,27 @@ section#latestupdate .container {
   }
   /* hero section responsive */
 
-  .wrap-text,
-  .wrap-text p {
-    text-align: left;
-    padding: 0;
-  }
-
-  .headline {
+  section#hero {
     padding-right: 3.31rem;
     padding-left: 3.31rem;
-    align-items: flex-start;
   }
 
-  .wrap-text {
-    padding: 0;
+  .headline,
+  .headline p {
     text-align: left;
+    padding: 0;
   }
 
-  .wrap-text h5 {
+  .headline h5 {
     font-size: 1.25rem;
     line-height: normal;
   }
 
-  .wrap-text h1 {
+  .headline h1 {
     font-size: 2.25rem;
   }
 
-  .wrap-text p {
+  .headline p {
     font-size: 0.75rem;
     align-self: stretch;
     padding: 0;
@@ -532,23 +546,11 @@ section#latestupdate .container {
     font-weight: normal;
   }
 
-  button.regist-btn {
-    display: flex;
-    padding: 1rem 1.25rem;
-    gap: 0.625rem;
-
-    border-radius: 0.3125rem;
-    background: #3eb7dd;
-
-    color: #fff;
-    font-size: 0.875rem;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-  }
-
   /* about section responsive */
-  section#about {
+  section#about,
+  section#mechanism,
+  section#latestupdate,
+  footer {
     padding: 6.25rem 1.22rem 6.25rem 1.22rem;
   }
 
@@ -571,6 +573,10 @@ section#latestupdate .container {
   }
 
   section#mechanism .container {
-    max-width: 90%;
+    max-width: 100%;
+  }
+
+  section#latestupdate {
+    padding: 3.5rem 1.22rem 3.5rem 1.22rem;
   }
 }
