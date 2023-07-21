@@ -43,6 +43,10 @@ body {
   line-height: normal;
 }
 
+.nav-link:hover {
+  color: #fff;
+}
+
 button.regist-btn {
   display: flex;
   padding: 0.625rem 1.875rem;
@@ -132,6 +136,7 @@ button.main-regist-btn {
 
 button.main-regist-btn:hover {
   background: #3eb7dd;
+  color: #fff;
 }
 
 /* hero section end */
@@ -363,7 +368,7 @@ section#latestupdate .container {
   padding-top: 0.94rem;
 }
 
-.article-card a {
+a {
   text-decoration: none;
 }
 
@@ -595,6 +600,12 @@ label:not(.form-check-label) {
   /* make button to center */
   margin: 0 auto;
   display: block;
+}
+
+@media (max-width: 1200px) {
+  .regist-form {
+    padding: 0 8rem 0 8rem;
+  }
 }
 
 @media (max-width: 768px) {
