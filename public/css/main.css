@@ -71,7 +71,7 @@ button.regist-btn:hover {
 
 /* hero section start */
 section#hero {
-  background: url("/public/images/hero-bg.png") no-repeat center center/cover;
+  background: url("../images/hero-bg.png") no-repeat center center/cover;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -193,8 +193,8 @@ iframe {
 /* mechanism section */
 
 section#mechanism {
-  background: url("/public/images/background-mekanisme-section.png") no-repeat
-    center center/cover;
+  background: url("../images/background-mekanisme-section.png") no-repeat center
+    center/cover;
   padding: 9.19rem 0rem 9.19rem 0rem;
 }
 
@@ -431,7 +431,7 @@ footer p {
 /* register.html */
 
 section#regist .container-fluid {
-  background: url("/public/images/background-header-title.png") no-repeat center
+  background: url("../images/background-header-title.png") no-repeat center
     center/cover;
   height: 25rem;
 }
